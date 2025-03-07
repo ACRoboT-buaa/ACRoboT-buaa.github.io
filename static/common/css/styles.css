@@ -98,27 +98,115 @@ body {
 
 
 /* Download section */
-.download a {
-    color: #0073e6;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
+/* 数据集下载部分容器 */
+.section.download {
+    background-color: #f9f9f9; /* 背景色 */
+    padding: 20px; /* 内边距 */
+    border-radius: 10px; /* 圆角 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+    margin-bottom: 30px; /* 底部外边距 */
 }
 
-.download a:hover {
-    color: #005bb5;
+/* 数据集下载标题 */
+.section.download h2 {
+    font-size: 24px; /* 字体大小 */
+    font-weight: bold; /* 加粗 */
+    color: #0073e6; /* 文字颜色 */
+    margin-bottom: 15px; /* 底部外边距 */
+}
+
+/* 数据集大小信息 */
+.section.download p[data-key="size"] {
+    font-size: 16px; /* 字体大小 */
+    color: #555; /* 文字颜色 */
+    margin-bottom: 10px; /* 底部外边距 */
+}
+
+/* 下载链接 */
+.section.download a[data-key="download_link"] {
+    display: inline-block; /* 行内块元素 */
+    padding: 10px 20px; /* 内边距 */
+    background-color: #0073e6; /* 背景色 */
+    color: #fff; /* 文字颜色 */
+    text-decoration: none; /* 去除下划线 */
+    border-radius: 5px; /* 圆角 */
+    transition: background-color 0.3s ease; /* 过渡效果 */
+    margin-top: 10px; 
+}
+
+/* 下载链接悬停效果 */
+.section.download a[data-key="download_link"]:hover {
+    background-color: #005bb5; /* 悬停时背景色 */
 }
 
 /* Citation box styling */
-/* Citation content with preformatted text */
-pre {
-    white-space: pre-wrap;
-    /* Ensure that long lines are wrapped correctly */
-    word-wrap: break-word;
-    /* Break long words */
-    font-family: 'Courier New', Courier, monospace;
+/* 引用部分整体容器 */
+.section.citation {
+    background-color: #f5f8ff; /* 柔和的背景色 */
+    padding: 30px; /* 增加内边距 */
+    border-radius: 12px; /* 更大的圆角 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 更明显的阴影 */
+    margin-bottom: 40px; /* 增加底部外边距 */
+}
+
+/* 引用标题 */
+.section.citation h2[data-key="citation"] {
+    font-size: 26px; /* 更大的字体 */
+    font-weight: bold;
+    color: #0073e6;
+    margin-bottom: 20px; /* 增加底部外边距 */
+    text-align: left; /* 标题靠左 */
+}
+
+/* 复制按钮 */
+.section.citation .copy-btn {
+    position: absolute;
+    top: 20px; /* 调整位置 */
+    right: 20px;
+    padding: 8px 16px; /* 增加按钮内边距 */
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 6px; /* 更大的圆角 */
+    cursor: pointer;
     font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* 增加按钮缩放过渡 */
+}
+
+/* 复制按钮悬停效果 */
+.section.citation .copy-btn:hover {
+    background-color: #005bb5;
+    transform: scale(1.05); /* 按钮微微放大 */
+}
+
+/* 复制按钮点击效果 */
+.section.citation .copy-btn:active {
+    background-color: #004492;
+    transform: scale(0.95); /* 按钮微微缩小 */
+}
+
+/* 复制按钮聚焦效果 */
+.section.citation .copy-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 115, 230, 0.3);
+}
+
+/* 引用内容容器 */
+.section.citation .citation-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* 轻微阴影 */
+}
+
+/* 引用文本 */
+.section.citation .citation-content pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Source Code Pro', 'Courier New', Courier, monospace; /* 更换字体 */
+    font-size: 16px; /* 增大字体 */
+    line-height: 1.6; /* 增加行高 */
+    color: #333;
 }
 
 
@@ -149,4 +237,53 @@ ul li {
     /* Add some spacing between list items */
     line-height: 1.0;
     /* Ensure better line spacing */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    /* 添加阴影效果，提升立体感 */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* 圆角边框 */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px; /* 增加内边距，让内容更宽敞 */
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* 仅保留底部边框，简化表格线条 */
+}
+
+th {
+    background-color: #0073e6; /* 使用更鲜明的颜色作为表头背景 */
+    color: white; /* 表头文字颜色 */
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* 偶数行背景色 */
+}
+
+tr:hover {
+    background-color: #e0e0e0; /* 鼠标悬停时的背景色 */
+    transition: background-color 0.3s ease; /* 添加过渡效果，使悬停更平滑 */
+}
+
+/* 首行和末行特殊处理 */
+tr:first-child th {
+    border-top: none;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* 表格首列和末列添加额外样式 */
+td:first-child, th:first-child {
+    padding-left: 20px;
+}
+
+td:last-child, th:last-child {
+    padding-right: 20px;
 }

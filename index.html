@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Datasets of Beihang ACT</title>
-    <link rel="icon" href="static/common/img/robot.png" type="image/x-icon">
+    <link rel="icon" href="static/common/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="static/common/css/styles.css">
     <link rel="stylesheet" href="static/common/css/lang.css">
     <link rel="stylesheet" href="static/common/css/video.css">
@@ -66,12 +66,26 @@
         </div>
         <div class="section">
             <h2 data-key="dataset_info">数据集信息</h2>
-            <ul>
-                <li data-key="time">时间 (时间戳 ms)</li>
-                <li data-key="axle_moment">axle_moment: 机器人N轴的力矩 (NM)</li>
-                <li data-key="axle_position">axle_position: 机器人N轴的旋转位置 (°)</li>
-                <li data-key="axle_speed">axle_speed: 机器人N轴的角速度 (°/s)</li>
-            </ul>
+            <table>
+                <tbody>
+                    <tr>
+                        <td data-key="time_key">time</td>
+                        <td data-key="time_value">时间 (时间戳 ms)</td>
+                    </tr>
+                    <tr>
+                        <td data-key="axle_moment_key">axle_moment</td>
+                        <td data-key="axle_moment_value">axle_moment: 机器人N轴的力矩 (NM)</td>
+                    </tr>
+                    <tr>
+                        <td data-key="axle_position_key">axle_position</td>
+                        <td data-key="axle_position_value">axle_position: 机器人N轴的旋转位置 (°)</td>
+                    </tr>
+                    <tr>
+                        <td data-key="axle_speed_key">axle_speed</td>
+                        <td data-key="axle_speed_value">axle_speed: 机器人N轴的角速度 (°/s)</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div class="section download">
             <h2 data-key="download">数据下载</h2>
@@ -108,11 +122,13 @@
             <h2 data-key="citation">引用</h2>
             <div class="citation-content">
                 <pre id="citation-text">
-@misc{
-    title=<span data-key="title">日常采集数据集</span>}, 
-    url={https://datasets.act.buaa.edu.cn/}, 
-    author={北航ACT实验室}, year={2024} 
-}</pre>
+        @article{
+          zhang2024robotdiffuse,
+          title={RobotDiffuse: Motion Planning for Redundant Manipulator based on Diffusion Model},
+          author={Zhang, Xiaohan and Mou, Xudong and Wang, Rui and Wo, Tianyu and Gu, Ningbo and Wang, Tiejun and Xu, Cangbai and Liu, Xudong},
+          journal={arXiv preprint arXiv:2412.19500},
+          year={2024}
+        }</pre>
             </div>
         </div>
     </div>

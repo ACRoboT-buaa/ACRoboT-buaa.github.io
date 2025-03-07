@@ -10,7 +10,7 @@
 .dataset-switch {
     cursor: pointer;
     background: rgba(255, 255, 255, 0.8);
-    padding: 8px 16px;
+    padding: 8px 24px;  /* 适当增加左右内边距来加宽按钮 */
     border-radius: 25px;
     font-size: 14px;
     font-weight: bold;
@@ -18,6 +18,7 @@
     border: 2px solid transparent;
     transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;  /* 往左移动一点 */
 }
 
 /* Hover and focus states */
@@ -45,7 +46,7 @@
     display: none;
     position: absolute; /* Position dropdown absolutely */
     top: 100%; /* Place it directly below the button */
-    left: 0;
+    right: 0;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -76,7 +77,8 @@
     font-size: 16px;
     transition: background-color 0.3s ease, padding-left 0.3s ease;
     color: #333;
-    text-align: left;
+    text-align: center;
+    white-space: nowrap;
 }
 
 /* Hover effect for datasetuage options */

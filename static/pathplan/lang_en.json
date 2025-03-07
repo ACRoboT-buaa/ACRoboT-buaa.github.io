@@ -18,7 +18,17 @@
     "axle_position": "axle_position: Rotational position of the N-th axis of the robot (°)",
     "axle_speed": "axle_speed: Angular velocity of the N-th axis of the robot (°/s)",
     "size": "Dataset Size: 20GB",
+    "format": "Storage format: hdf5",
     "video1": "Polishing Robot",
     "video2": "Palletizing Robot",
-    "video3": "Assembly Robot"
+    "video3": "Assembly Robot",
+    "table_key": "Key",
+    "table_dimension": "Dimension",
+    "table_value": "Value",
+    "m_length_dimension": "The actual length of the variable-length joint sequence",
+    "solutions_dimension": "Joint sequence information. The first dimension is the sequence length, and the second dimension is the number of robot joints. Only the sequence before m_length is meaningful, and the sequence after m_length is padded with 0.",
+    "sphere_centers_dimension": "The center positions (x, y, z) of two spherical obstacles",
+    "sphere_radiis_dimension": "The radii of two spherical obstacles, with a value range of (0.1, 0.2). Setting the corresponding value to 0 means that the obstacle does not exist, which is the default padding.",
+    "cube_centers_dimension": "The center positions (x, y, z) of two cube obstacles",
+    "cube_sizes_dimension": "The radii of two spherical obstacles, with a value range of (0.1, 0.2). Setting the corresponding value to 0 means that the obstacle does not exist, which is the default padding."
 }

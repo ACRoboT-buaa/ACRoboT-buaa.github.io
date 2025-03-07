@@ -14,7 +14,7 @@
     "copy_button": "复制",
     "copied_button_zh": "已复制",
     "dataset_button": "更多 ▼",
-    "more-classify": "分类数据集",
-    "more-pathplan": "轨迹规划数据集",
+    "more-classify": "时序数据集",
+    "more-pathplan": "轨迹数据集",
     "more-reposity": "仓库"
 }

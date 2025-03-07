@@ -14,7 +14,7 @@
     "copy_button": "Copy",
     "copied_button_zh": "Copied",
     "dataset_button": "More ▼",
-    "more-classify": "Classification Dataset",
-    "more-pathplan": "Trajectory Planning Dataset",
+    "more-classify": "Time-series Dataset",
+    "more-pathplan": "Trajectory Dataset",
     "more-reposity": "Repository"
 }
