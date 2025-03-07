@@ -19,6 +19,7 @@
     "axle_speed": "axle_speed: Angular velocity of the N-th axis of the robot (°/s)",
     "size": "Dataset Size: 20GB",
     "format": "Storage format: hdf5",
+    "robot_model": "robot_model: Robot-obtalcles-panda (ROP)",
     "video1": "Polishing Robot",
     "video2": "Palletizing Robot",
     "video3": "Assembly Robot",

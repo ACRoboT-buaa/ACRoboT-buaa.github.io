@@ -112,11 +112,21 @@ body {
     font-size: 24px; /* 字体大小 */
     font-weight: bold; /* 加粗 */
     color: #0073e6; /* 文字颜色 */
-    margin-bottom: 15px; /* 底部外边距 */
+    margin-bottom: 30px; /* 底部外边距 */
 }
 
 /* 数据集大小信息 */
 .section.download p[data-key="size"] {
+    font-size: 16px; /* 字体大小 */
+    color: #555; /* 文字颜色 */
+    margin-bottom: 10px; /* 底部外边距 */
+}
+.section.download p[data-key="format"] {
+    font-size: 16px; /* 字体大小 */
+    color: #555; /* 文字颜色 */
+    margin-bottom: 10px; /* 底部外边距 */
+}
+.section.download p[data-key="robot_model"] {
     font-size: 16px; /* 字体大小 */
     color: #555; /* 文字颜色 */
     margin-bottom: 10px; /* 底部外边距 */
@@ -131,7 +141,7 @@ body {
     text-decoration: none; /* 去除下划线 */
     border-radius: 5px; /* 圆角 */
     transition: background-color 0.3s ease; /* 过渡效果 */
-    margin-top: 10px; 
+    margin-top: 5px; 
 }
 
 /* 下载链接悬停效果 */
