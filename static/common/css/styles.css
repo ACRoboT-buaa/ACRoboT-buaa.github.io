@@ -148,7 +148,37 @@ body {
 .section.download a[data-key="download_link"]:hover {
     background-color: #005bb5; /* 悬停时背景色 */
 }
+/* 直接下载按钮样式 */
+.section.download a[data-key="direct_download_link"] {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
 
+/* 直接下载按钮悬停效果 */
+.section.download a[data-key="direct_download_link"]:hover {
+    background-color: #005bb5;
+}
+
+.section.download a[data-key="instruction"] {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.section.download a[data-key="instruction"]:hover {
+    background-color: #005bb5;
+}
 /* Citation box styling */
 /* 引用部分整体容器 */
 .section.citation {

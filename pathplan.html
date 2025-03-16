@@ -36,9 +36,6 @@
                         <li data-key="more-classify" onclick="window.location.href = './index.html';">
                             分类
                         </li>
-                        <li data-key="more-reposity"
-                            onclick="window.location.href = 'https://github.com/ACRoboT-buaa/ACTDatasets.github.io';">仓库
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -48,7 +45,16 @@
         <div class="section">
             <h2 data-key="intro">简介</h2>
             <p data-key="intro_text">本数据集专门为机器人时序数据分类训练创建，数据来源于...</p>
+            <h3 data-key="dataset_generation_method_title">数据集生成方式</h3>
+            <p data-key="dataset_generation_method"></p>
+            <h3 data-key="data_scale_title">数据规模</h3>
+            <p data-key="data_scale"></p>
+            <h3 data-key="scene_setup_title">场景设置</h3>
+            <p data-key="scene_setup"></p>
+            <h3 data-key="path_generation_algorithm_title">路径生成算法</h3>
+            <p data-key="path_generation_algorithm"></p>
         </div>
+
         <div class="section grid">
             <div class="info-box">
                 <h3 data-key="release_info">发布信息</h3>
@@ -117,18 +123,27 @@
             <p data-key="size">数据集大小：20GB</p>
             <p data-key="format">存储格式：hdf5</p>
             <p data-key="robot_model">机器人型号：Robot-obtalcles-panda (ROP)</p>
-            <p><a href="https://github.com/ACRoboT-buaa/RobotDiffuse/tree/main" data-key="download_link"
-                    target="_blank">点击下载数据集</a></p>
+            <p>
+                <a href="https://github.com/ACRoboT-buaa/RobotDiffuse/tree/main" data-key="download_link" target="_blank">点击下载数据集</a>
+                <a href="https://github.com/ACRoboT-buaa/RobotDiffuse/raw/refs/heads/main/datasets/robot.npz?download=" data-key="direct_download_link">直接下载数据集</a>
+                <a href="https://github.com/ACRoboT-buaa/RobotDiffuse/blob/main/README.md#dataset" data-key="instruction">直接下载数据集</a>
+            </p>
         </div>
         <div class="section">
             <h2 data-key="videos">示例视频</h2>
             <div class="video-container">
 
                 <div class="video-item">
-                    <video controls>
-                        <source src="static/classify/videos/damo.mp4" type="video/mp4">
-                    </video>
-                    <span data-key="video1">video</span>
+                    <img src="static/classify/gif/example1.gif" alt="GIF 图片">
+                    <span data-key="gif1">数据示例1</span>
+                </div>
+                <div class="video-item">
+                    <img src="static/classify/gif/example2.gif" alt="GIF 图片">
+                    <span data-key="gif2">数据示例2</span>
+                </div>
+                <div class="video-item">
+                    <img src="static/classify/gif/example3.gif" alt="GIF 图片">
+                    <span data-key="gif3">数据示例3</span>
                 </div>
             </div>
         </div>
