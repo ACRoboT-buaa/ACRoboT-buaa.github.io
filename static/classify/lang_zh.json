@@ -23,6 +23,8 @@
     "axle_speed_key": "axle_speed",
     "axle_speed_value": "机器人N轴的角速度 (°/s)",
     "size": "数据集大小：20GB",
+    "download_google": "跳转Google Drive下载",
+    "download_anyshare": "跳转AnyShare下载",
     "video1": "打磨机器人",
     "video2": "码垛机器人",
     "video3": "装配机器人",
