@@ -25,7 +25,7 @@
     "axle_position_value": "Rotational position of robot N-axis (°)",
     "axle_speed_key": "axle_speed",
     "axle_speed_value": "Angular velocity of robot N-axis (°/s)",
-    "size": "Dataset Size: 20GB",
+    "size": "Dataset Size: 5.31GB",
     "download_link": "Click to download the dataset",
     "download_google": "Click to download the dataset (GoogleDrive)",
     "download_anyshare": "Click to download the dataset (AnyShare)",
