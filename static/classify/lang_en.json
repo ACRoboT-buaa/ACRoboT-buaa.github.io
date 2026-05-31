@@ -27,6 +27,8 @@
     "axle_speed_value": "Angular velocity of robot N-axis (°/s)",
     "size": "Dataset Size: 20GB",
     "download_link": "Click to download the dataset",
+    "download_google": "Click to download the dataset (GoogleDrive)",
+    "download_anyshare": "Click to download the dataset (AnyShare)",
     "video1": "Polishing Robot",
     "video2": "Palletizing Robot",
     "video3": "Assembly Robot",
