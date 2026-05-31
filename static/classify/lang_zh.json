@@ -22,7 +22,7 @@
     "axle_position_value": "机器人N轴的旋转位置 (°)",
     "axle_speed_key": "axle_speed",
     "axle_speed_value": "机器人N轴的角速度 (°/s)",
-    "size": "数据集大小：20GB",
+    "size": "数据集大小：5.31GB",
     "download_google": "跳转Google Drive下载",
     "download_anyshare": "跳转AnyShare下载",
     "video1": "打磨机器人",
